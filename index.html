@@ -3,7 +3,7 @@
 
 <html  dir="ltr" lang="ru" xml:lang="ru">
 <head>
-    <title>Итоговое тестирование / Practice Test - 2024-2025</title>
+    <title>Итоговое тестирование</title>
     <link rel="shortcut icon" href="https://elearning.volgmed.ru/theme/image.php/boost/theme/1749110147/favicon" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="moodle, Пробный тест (неограниченное количество попыток) / Practice Test - 2024-2025 (страница 1 из 100)" />
@@ -325,52 +325,20 @@ function a(text, correctAnswer) {
   }
   
   const questionHTML = `
-  <div class="question-wrapper" style="margin-bottom: 800px;">
-    <!-- Заголовок теста -->
-    <div class="d-flex align-items-center">
-      <div class="mr-auto">
-        <div class="page-context-header">
-          <div class="page-header-image mr-2">
-            <div class="assessment activityiconcontainer modicon_quiz">
-              <img class="icon activityicon" aria-hidden="true" alt="" />
-            </div>
-          </div>
-          <div class="page-header-headings">
-            <h1 class="h2">Итоговое тестирование / Practice Test - 2024-2025</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Навигация -->
-    <div class="container-fluid tertiary-navigation">
-      <div class="row">
-        <div class="navitem">
-          <a class="btn btn-secondary" href="">Назад</a>
-        </div>
-      </div>
-    </div>
-
+  <div class="question-wrapper" style="margin-bottom: 30px;">
     <!-- Сам вопрос -->
-    <div id="" class="que multichoice deferredfeedback notanswered">
+    <div class="que multichoice">
       <div class="info">
-        <h3 class="no">Вопрос <span class="qno">${currentQuestionNum}</span></h3>
+        <h3 class="no">Вопрос ${currentQuestionNum}</h3>
         <div class="state">Пока нет ответа</div>
         <div class="grade">Балл: 1,00</div>
-        <div class="questionflag editable"></div>
       </div>
       <div class="content">
-        <div class="formulation clearfix">
+        <div class="formulation">
           <div class="qtext">${text}</div>
           ${answers.map(a => `<div><input type="radio" name="q${currentQuestionNum}" value="${a}"> ${a}</div>`).join('')}
         </div>
       </div>
-    </div>
-
-    <!-- Кнопки навигации -->
-    <div class="submitbtns" style="margin-top: 20px;">
-      <input type="submit" value="Предыдущая страница" class="mod_quiz-prev-nav btn btn-secondary">
-      <input type="submit" name="next" value="Следующая страница" class="mod_quiz-next-nav btn btn-primary">
     </div>
   </div>`;
   
@@ -387,6 +355,8 @@ if (!document.getElementById('questions-container')) {
   document.body.appendChild(container);
 }
 </script>
+
+
 
 <script>a("1443. ЛИНИЯ КЛЕЙНА РАЗДЕЛЯЕТ:", "а) красную кайму и слизистую оболочку");</script>
 <script>a("1444. К ОСНОВНЫМ МЕТОДАМ ОБСЛЕДОВАНИЯ ОТНОСИТСЯ:", "а) осмотр");</script>
@@ -4170,6 +4140,7 @@ if (!document.getElementById('questions-container')) {
 <script>a("2438. ДЛЯ ИЗУЧЕНИЯ ИНФЕКЦИОННОЙ ЗАБОЛЕВАЕМОСТИ ОСНОВНЫМ ДОКУМЕНТОМ ЯВЛЯЕТСЯ:", "а) экстренное извещение об инфекционном заболевании, пищевом отравлении, профессиональном заболевании");</script>
 <script>a("2439. ПОКАЗАНИЕМ К ПРЯМОМУ ПОКРЫТИЮ ПУЛЬПЫ У ПОСТОЯННЫХ ЗУБОВ С НЕСФОРМИРОВАННЫМИ КОРНЯМИ ЯВЛЯЕТСЯ:", "а) бессимптомный обратимый пульпит кариозного происхождения со случайным обнажением пульпы");</script>
 <script>a("2440. ПРИ ЛЕЧЕНИИ ЗУБА МЕТОДОМ ВЫСОКОЙ АМПУТАЦИИ НА ОСТАВШУЮСЯ В КАНАЛЕ ЧАСТЬ КОРНЕВОЙ ПУЛЬПЫ ВОЗДЕЙСТВУЮТ ЛЕКАРСТВЕННЫМИ ВЕЩЕСТВАМИ С ЦЕЛЬЮ:", "а) прекращения воспалительного процесса и обеспечения дальнейшего формирования зуба");</script>
+
 
 </body></html>
 
